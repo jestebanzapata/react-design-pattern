@@ -2,12 +2,14 @@
 
 export interface ITreeNode {
 
-  identifier: string;
+  name: string;
 
   children: ITreeNode[];
 
-  addNode(node: ITreeNode): void;
+  test?: string;
 
-  removeNode(node: ITreeNode): void;
+  addNode?(node: ITreeNode): void;
+
+  removeNode?(node: ITreeNode): void;
 
 }

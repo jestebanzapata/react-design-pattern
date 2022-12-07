@@ -1,11 +1,11 @@
 import { ITreeNode } from "./ITreeNode";
 
 export class GenericTreeNode implements ITreeNode {
-  identifier: string;
+  name: string;
   children: ITreeNode[] = [];
 
-  constructor(nodeIdentifier: string){
-    this.identifier = nodeIdentifier;
+  constructor(name: string){
+    this.name = name;
   }
 
   addNode(treeNode: any) {
